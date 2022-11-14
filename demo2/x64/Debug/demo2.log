@@ -1,0 +1,145 @@
+﻿  
+  D:\cuda demo\demo2\demo2>"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v9.0\bin\nvcc.exe" -ccbin "C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\x86_amd64" -x cu  -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v9.0\include" -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v9.0\include"  -G   --keep-dir x64\Debug -maxrregcount=0  --machine 64 --compile   -g   -DWIN32 -DWIN64 -D_DEBUG -D_CONSOLE -D_MBCS -Xcompiler "/EHsc /W3 /nologo /Od /FS /Zi /RTC1 /MDd " -o x64\Debug\fft.cu.obj "D:\cuda demo\demo2\demo2\fft.cu" -clean 
+  fft.cu
+  
+  D:\cuda demo\demo2\demo2>"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v9.0\bin\nvcc.exe" -ccbin "C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\x86_amd64" -x cu  -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v9.0\include" -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v9.0\include"  -G   --keep-dir x64\Debug -maxrregcount=0  --machine 64 --compile   -g   -DWIN32 -DWIN64 -D_DEBUG -D_CONSOLE -D_MBCS -Xcompiler "/EHsc /W3 /nologo /Od /FS /Zi /RTC1 /MDd " -o x64\Debug\gsOp.cu.obj "D:\cuda demo\demo2\demo2\gsOp.cu" -clean 
+  gsOp.cu
+  
+  D:\cuda demo\demo2\demo2>"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v9.0\bin\nvcc.exe" -ccbin "C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\x86_amd64" -x cu  -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v9.0\include" -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v9.0\include"  -G   --keep-dir x64\Debug -maxrregcount=0  --machine 64 --compile   -g   -DWIN32 -DWIN64 -D_DEBUG -D_CONSOLE -D_MBCS -Xcompiler "/EHsc /W3 /nologo /Od /FS /Zi /RTC1 /MDd " -o x64\Debug\kernel.cu.obj "D:\cuda demo\demo2\demo2\kernel.cu" -clean 
+  kernel.cu
+  Compiling CUDA source file fft.cu...
+  Compiling CUDA source file kernel.cu...
+  Compiling CUDA source file gsOp.cu...
+  
+  
+  D:\cuda demo\demo2\demo2>"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v9.0\bin\nvcc.exe" -gencode=arch=compute_61,code=\"sm_61,compute_61\" --use-local-env --cl-version 2015 -ccbin "C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\x86_amd64" -x cu  -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v9.0\include" -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v9.0\include"  -G   --keep-dir x64\Debug -maxrregcount=0  --machine 64 --compile -cudart static  -g   -DWIN32 -DWIN64 -D_DEBUG -D_CONSOLE -D_MBCS -Xcompiler "/EHsc /W3 /nologo /Od /FS /Zi /RTC1 /MDd " -o x64\Debug\fft.cu.obj "D:\cuda demo\demo2\demo2\fft.cu" 
+  D:\cuda demo\demo2\demo2>"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v9.0\bin\nvcc.exe" -gencode=arch=compute_61,code=\"sm_61,compute_61\" --use-local-env --cl-version 2015 -ccbin "C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\x86_amd64" -x cu  -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v9.0\include" -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v9.0\include"  -G   --keep-dir x64\Debug -maxrregcount=0  --machine 64 --compile -cudart static  -g   -DWIN32 -DWIN64 -D_DEBUG -D_CONSOLE -D_MBCS -Xcompiler "/EHsc /W3 /nologo /Od /FS /Zi /RTC1 /MDd " -o x64\Debug\kernel.cu.obj "D:\cuda demo\demo2\demo2\kernel.cu" 
+  
+  D:\cuda demo\demo2\demo2>"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v9.0\bin\nvcc.exe" -gencode=arch=compute_61,code=\"sm_61,compute_61\" --use-local-env --cl-version 2015 -ccbin "C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\x86_amd64" -x cu  -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v9.0\include" -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v9.0\include"  -G   --keep-dir x64\Debug -maxrregcount=0  --machine 64 --compile -cudart static  -g   -DWIN32 -DWIN64 -D_DEBUG -D_CONSOLE -D_MBCS -Xcompiler "/EHsc /W3 /nologo /Od /FS /Zi /RTC1 /MDd " -o x64\Debug\gsOp.cu.obj "D:\cuda demo\demo2\demo2\gsOp.cu" 
+D:/cuda demo/demo2/demo2/fft.cu(54): warning : variable "status" was set but never used
+D:/cuda demo/demo2/demo2/fft.cu(123): warning : variable "status" was set but never used
+D:/cuda demo/demo2/demo2/kernel.cu(199): warning : non-void function "main" should return a value
+D:/cuda demo/demo2/demo2/kernel.cu(205): warning : non-void function "main" should return a value
+D:/cuda demo/demo2/demo2/kernel.cu(214): warning : conversion from a string literal to "char *" is deprecated
+D:/cuda demo/demo2/demo2/kernel.cu(252): warning : conversion from a string literal to "char *" is deprecated
+D:/cuda demo/demo2/demo2/kernel.cu(267): warning : conversion from a string literal to "char *" is deprecated
+D:/cuda demo/demo2/demo2/kernel.cu(268): warning : conversion from a string literal to "char *" is deprecated
+D:/cuda demo/demo2/demo2/kernel.cu(269): warning : conversion from a string literal to "char *" is deprecated
+D:/cuda demo/demo2/demo2/kernel.cu(270): warning : conversion from a string literal to "char *" is deprecated
+D:/cuda demo/demo2/demo2/kernel.cu(271): warning : conversion from a string literal to "char *" is deprecated
+D:/cuda demo/demo2/demo2/kernel.cu(274): warning : conversion from a string literal to "char *" is deprecated
+D:/cuda demo/demo2/demo2/kernel.cu(275): warning : conversion from a string literal to "char *" is deprecated
+D:/cuda demo/demo2/demo2/kernel.cu(276): warning : conversion from a string literal to "char *" is deprecated
+D:/cuda demo/demo2/demo2/kernel.cu(283): warning : conversion from a string literal to "char *" is deprecated
+D:/cuda demo/demo2/demo2/kernel.cu(284): warning : conversion from a string literal to "char *" is deprecated
+D:/cuda demo/demo2/demo2/kernel.cu(285): warning : conversion from a string literal to "char *" is deprecated
+D:/cuda demo/demo2/demo2/kernel.cu(286): warning : conversion from a string literal to "char *" is deprecated
+D:/cuda demo/demo2/demo2/kernel.cu(293): warning : conversion from a string literal to "char *" is deprecated
+D:/cuda demo/demo2/demo2/kernel.cu(304): warning : conversion from a string literal to "char *" is deprecated
+D:/cuda demo/demo2/demo2/kernel.cu(347): warning : conversion from a string literal to "char *" is deprecated
+D:/cuda demo/demo2/demo2/kernel.cu(348): warning : conversion from a string literal to "char *" is deprecated
+D:/cuda demo/demo2/demo2/kernel.cu(349): warning : conversion from a string literal to "char *" is deprecated
+D:/cuda demo/demo2/demo2/kernel.cu(350): warning : conversion from a string literal to "char *" is deprecated
+D:/cuda demo/demo2/demo2/kernel.cu(351): warning : conversion from a string literal to "char *" is deprecated
+D:/cuda demo/demo2/demo2/kernel.cu(352): warning : conversion from a string literal to "char *" is deprecated
+D:/cuda demo/demo2/demo2/kernel.cu(381): warning : conversion from a string literal to "char *" is deprecated
+D:/cuda demo/demo2/demo2/kernel.cu(402): warning : non-void function "main" should return a value
+D:/cuda demo/demo2/demo2/kernel.cu(471): warning : conversion from a string literal to "char *" is deprecated
+D:/cuda demo/demo2/demo2/kernel.cu(495): warning : conversion from a string literal to "char *" is deprecated
+D:/cuda demo/demo2/demo2/kernel.cu(496): warning : conversion from a string literal to "char *" is deprecated
+D:/cuda demo/demo2/demo2/kernel.cu(502): warning : conversion from a string literal to "char *" is deprecated
+D:/cuda demo/demo2/demo2/kernel.cu(520): warning : conversion from a string literal to "char *" is deprecated
+D:/cuda demo/demo2/demo2/kernel.cu(523): warning : conversion from a string literal to "char *" is deprecated
+D:/cuda demo/demo2/demo2/kernel.cu(524): warning : conversion from a string literal to "char *" is deprecated
+D:/cuda demo/demo2/demo2/kernel.cu(526): warning : conversion from a string literal to "char *" is deprecated
+D:/cuda demo/demo2/demo2/kernel.cu(527): warning : conversion from a string literal to "char *" is deprecated
+D:/cuda demo/demo2/demo2/kernel.cu(216): warning : variable "status" was set but never used
+D:/cuda demo/demo2/demo2/kernel.cu(317): warning : variable "Nframe" was declared but never referenced
+D:/cuda demo/demo2/demo2/kernel.cu(318): warning : variable "n" was set but never used
+D:/cuda demo/demo2/demo2/kernel.cu(654): warning : taking the address of a temporary
+D:/cuda demo/demo2/demo2/kernel.cu(659): warning : taking the address of a temporary
+D:/cuda demo/demo2/demo2/kernel.cu(675): warning : taking the address of a temporary
+D:/cuda demo/demo2/demo2/kernel.cu(575): warning : variable "cublasStatus" was set but never used
+D:/cuda demo/demo2/demo2/kernel.cu(791): warning : taking the address of a temporary
+D:/cuda demo/demo2/demo2/kernel.cu(802): warning : taking the address of a temporary
+D:/cuda demo/demo2/demo2/kernel.cu(811): warning : taking the address of a temporary
+D:/cuda demo/demo2/demo2/kernel.cu(834): warning : taking the address of a temporary
+D:/cuda demo/demo2/demo2/kernel.cu(842): warning : taking the address of a temporary
+D:/cuda demo/demo2/demo2/kernel.cu(861): warning : taking the address of a temporary
+D:/cuda demo/demo2/demo2/kernel.cu(906): warning : taking the address of a temporary
+D:/cuda demo/demo2/demo2/kernel.cu(1123): warning : taking the address of a temporary
+D:/cuda demo/demo2/demo2/kernel.cu(1128): warning : taking the address of a temporary
+D:/cuda demo/demo2/demo2/kernel.cu(1144): warning : taking the address of a temporary
+D:/cuda demo/demo2/demo2/kernel.cu(1148): warning : taking the address of a temporary
+D:/cuda demo/demo2/demo2/kernel.cu(1044): warning : variable "cublasStatus" was set but never used
+D:/cuda demo/demo2/demo2/fft.cu(54): warning : variable "status" was set but never used
+D:/cuda demo/demo2/demo2/fft.cu(123): warning : variable "status" was set but never used
+  fft.cu
+  gsOp.cu
+D:/cuda demo/demo2/demo2/kernel.cu(199): warning : non-void function "main" should return a value
+D:/cuda demo/demo2/demo2/kernel.cu(205): warning : non-void function "main" should return a value
+D:/cuda demo/demo2/demo2/kernel.cu(214): warning : conversion from a string literal to "char *" is deprecated
+D:/cuda demo/demo2/demo2/kernel.cu(252): warning : conversion from a string literal to "char *" is deprecated
+D:/cuda demo/demo2/demo2/kernel.cu(267): warning : conversion from a string literal to "char *" is deprecated
+D:/cuda demo/demo2/demo2/kernel.cu(268): warning : conversion from a string literal to "char *" is deprecated
+D:/cuda demo/demo2/demo2/kernel.cu(269): warning : conversion from a string literal to "char *" is deprecated
+D:/cuda demo/demo2/demo2/kernel.cu(270): warning : conversion from a string literal to "char *" is deprecated
+D:/cuda demo/demo2/demo2/kernel.cu(271): warning : conversion from a string literal to "char *" is deprecated
+D:/cuda demo/demo2/demo2/kernel.cu(274): warning : conversion from a string literal to "char *" is deprecated
+D:/cuda demo/demo2/demo2/kernel.cu(275): warning : conversion from a string literal to "char *" is deprecated
+D:/cuda demo/demo2/demo2/kernel.cu(276): warning : conversion from a string literal to "char *" is deprecated
+D:/cuda demo/demo2/demo2/kernel.cu(283): warning : conversion from a string literal to "char *" is deprecated
+D:/cuda demo/demo2/demo2/kernel.cu(284): warning : conversion from a string literal to "char *" is deprecated
+D:/cuda demo/demo2/demo2/kernel.cu(285): warning : conversion from a string literal to "char *" is deprecated
+D:/cuda demo/demo2/demo2/kernel.cu(286): warning : conversion from a string literal to "char *" is deprecated
+D:/cuda demo/demo2/demo2/kernel.cu(293): warning : conversion from a string literal to "char *" is deprecated
+D:/cuda demo/demo2/demo2/kernel.cu(304): warning : conversion from a string literal to "char *" is deprecated
+D:/cuda demo/demo2/demo2/kernel.cu(347): warning : conversion from a string literal to "char *" is deprecated
+D:/cuda demo/demo2/demo2/kernel.cu(348): warning : conversion from a string literal to "char *" is deprecated
+D:/cuda demo/demo2/demo2/kernel.cu(349): warning : conversion from a string literal to "char *" is deprecated
+D:/cuda demo/demo2/demo2/kernel.cu(350): warning : conversion from a string literal to "char *" is deprecated
+D:/cuda demo/demo2/demo2/kernel.cu(351): warning : conversion from a string literal to "char *" is deprecated
+D:/cuda demo/demo2/demo2/kernel.cu(352): warning : conversion from a string literal to "char *" is deprecated
+D:/cuda demo/demo2/demo2/kernel.cu(381): warning : conversion from a string literal to "char *" is deprecated
+D:/cuda demo/demo2/demo2/kernel.cu(402): warning : non-void function "main" should return a value
+D:/cuda demo/demo2/demo2/kernel.cu(471): warning : conversion from a string literal to "char *" is deprecated
+D:/cuda demo/demo2/demo2/kernel.cu(495): warning : conversion from a string literal to "char *" is deprecated
+D:/cuda demo/demo2/demo2/kernel.cu(496): warning : conversion from a string literal to "char *" is deprecated
+D:/cuda demo/demo2/demo2/kernel.cu(502): warning : conversion from a string literal to "char *" is deprecated
+D:/cuda demo/demo2/demo2/kernel.cu(520): warning : conversion from a string literal to "char *" is deprecated
+D:/cuda demo/demo2/demo2/kernel.cu(523): warning : conversion from a string literal to "char *" is deprecated
+D:/cuda demo/demo2/demo2/kernel.cu(524): warning : conversion from a string literal to "char *" is deprecated
+D:/cuda demo/demo2/demo2/kernel.cu(526): warning : conversion from a string literal to "char *" is deprecated
+D:/cuda demo/demo2/demo2/kernel.cu(527): warning : conversion from a string literal to "char *" is deprecated
+D:/cuda demo/demo2/demo2/kernel.cu(216): warning : variable "status" was set but never used
+D:/cuda demo/demo2/demo2/kernel.cu(317): warning : variable "Nframe" was declared but never referenced
+D:/cuda demo/demo2/demo2/kernel.cu(318): warning : variable "n" was set but never used
+D:/cuda demo/demo2/demo2/kernel.cu(654): warning : taking the address of a temporary
+D:/cuda demo/demo2/demo2/kernel.cu(659): warning : taking the address of a temporary
+D:/cuda demo/demo2/demo2/kernel.cu(675): warning : taking the address of a temporary
+D:/cuda demo/demo2/demo2/kernel.cu(575): warning : variable "cublasStatus" was set but never used
+D:/cuda demo/demo2/demo2/kernel.cu(791): warning : taking the address of a temporary
+D:/cuda demo/demo2/demo2/kernel.cu(802): warning : taking the address of a temporary
+D:/cuda demo/demo2/demo2/kernel.cu(811): warning : taking the address of a temporary
+D:/cuda demo/demo2/demo2/kernel.cu(834): warning : taking the address of a temporary
+D:/cuda demo/demo2/demo2/kernel.cu(842): warning : taking the address of a temporary
+D:/cuda demo/demo2/demo2/kernel.cu(861): warning : taking the address of a temporary
+D:/cuda demo/demo2/demo2/kernel.cu(906): warning : taking the address of a temporary
+D:/cuda demo/demo2/demo2/kernel.cu(1123): warning : taking the address of a temporary
+D:/cuda demo/demo2/demo2/kernel.cu(1128): warning : taking the address of a temporary
+D:/cuda demo/demo2/demo2/kernel.cu(1144): warning : taking the address of a temporary
+D:/cuda demo/demo2/demo2/kernel.cu(1148): warning : taking the address of a temporary
+D:/cuda demo/demo2/demo2/kernel.cu(1044): warning : variable "cublasStatus" was set but never used
+  kernel.cu
+D:/cuda demo/demo2/demo2/kernel.cu(56): warning C4477: 'fprintf' : format string '%s' requires an argument of type 'char *', but variadic argument 1 has type 'int'
+D:/cuda demo/demo2/demo2/kernel.cu(56): warning C4313: 'fprintf': '%s' in format string conflicts with argument 1 of type 'int'
+D:/cuda demo/demo2/demo2/kernel.cu(413): warning C4477: 'sprintf' : format string '%.tx' requires an argument of type '__int64', but variadic argument 1 has type 'int'
+  D:/cuda demo/demo2/demo2/kernel.cu(413): note: consider using '%x' in the format string
+  D:/cuda demo/demo2/demo2/kernel.cu(413): note: consider using '%I32x' in the format string
+d:\cuda demo\demo2\demo2\kernel.cu(454): warning C4700: uninitialized local variable 'S_d' used
+  demo2.vcxproj -> D:\cuda demo\demo2\x64\Debug\demo2.exe
+  demo2.vcxproj -> D:\cuda demo\demo2\x64\Debug\demo2.pdb (Full PDB)
+  copy "C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v9.0\bin\cudart*.dll" "D:\cuda demo\demo2\x64\Debug\"
+  C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v9.0\bin\cudart32_90.dll
+  C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v9.0\bin\cudart64_90.dll
+          2 file(s) copied.
